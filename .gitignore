@@ -1,0 +1,25 @@
+.DS_Store
+
+# Environment files with local secrets or machine-specific settings.
+.env
+.env.local
+.env.*.local
+
+# Frontend dependencies and build output.
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/dist/
+
+# Backend virtual environments, caches, and test/build artifacts.
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.ruff_cache/
+backend/dist/
+backend/build/
+*.pyc
+
+# Local editor/project files.
+.vscode/
+.idea/

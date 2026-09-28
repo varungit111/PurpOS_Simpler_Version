@@ -1,0 +1,36 @@
+{
+  "name": "purpos-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname localhost --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test:review-mode": "node --experimental-strip-types --test tests/completed-stage-review.test.ts",
+    "test:navigation": "node --experimental-strip-types --test tests/assessment-stage-navigation.test.ts",
+    "test:resume": "node --experimental-strip-types --test tests/assessment-resume.test.ts",
+    "test:stress-test": "node --experimental-strip-types --test tests/stress-test-agreement.test.ts",
+    "test:define": "node --experimental-strip-types --test tests/define-presentation.test.ts",
+    "test:identify-brief": "node --experimental-strip-types --test tests/identify-brief-presentation.test.ts",
+    "typecheck": "tsc --noEmit --incremental false"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@eslint/eslintrc": "^3.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0"
+  }
+}
